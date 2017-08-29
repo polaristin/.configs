@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/stin/p4/git/g_nds_directtv_dvb_ddi/src/cdi_drivers/inc'
+let g:netrw_dirhist_2='/home/stin/p4/git/wifi/mtdwlan.rel-1.0.1312-3.rc1/lib/src'
+let g:netrw_dirhist_3='/home/stin/p4/git/wifi/mtdwlan.rel-1.0.1312-3.rc1/lib'
+let g:netrw_dirhist_4='/home/stin/p4/git/g_nds_directtv_dvb_ddi/src/cdi_drivers/mw/RootFS/partition/ROOTFS'

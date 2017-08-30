@@ -1,0 +1,69 @@
+# Start message
+startup_message off
+
+# 設定每個視窗的標題
+caption always "%{=u .r} %-w%<%{=ub .Y}%n %t%{=u .r}%+w "
+
+# 設定總是顯示 screen 的狀態列
+#hardstatus alwaysignore
+#hardstatus alwayslastline "%{= .K} [%l]%<%=%{= .Y}$USER%{= .R}@%H %=%{= .m} %Y/%m/%d%{= .M} %0c "
+#hardstatus alwayslastline "%{b kw}%H %{r}%1` %{w}| %{g}%c %{w}| %{y}%d.%m.%Y %{w}| %{g}%l %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
+
+# Set default encoding using utf8
+defutf8 on
+
+# Refresh the display when exiting programs
+altscreen on
+
+# Dynamic title
+shelltitle '$ |bash'
+
+# Disable vbell
+vbell off
+
+# 開啟 256 色模式
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+# Keboard binding
+# bind F11 to move to previous window
+#bindkey -k F1 prev
+# bind F12 to move to next window
+#bindkey -k F2 next
+# bind Alt`~= to screen0~12
+bindkey "^[`" select 0
+bindkey "^[1" select 1
+bindkey "^[2" select 2
+bindkey "^[3" select 3
+bindkey "^[4" select 4
+bindkey "^[5" select 5
+bindkey "^[6" select 6
+bindkey "^[7" select 7
+bindkey "^[8" select 8
+bindkey "^[9" select 9
+bindkey "^[0" select 10
+bindkey "^[-" select 11
+bindkey "^[=" select 12
+# bind F7 to detach screen session (to background)
+#bindkey -k k7 detach
+# bind F8 to kill current screen window
+#bindkey -k k8 kill
+# bind F9 to create a new screen
+#bindkey -k k9 screen
+# bind F10 to rename current screen window
+#bindkey -k k; title
+
+# bind Alt+s/f/q to split/switch/quit screen
+bindkey "^[s" split
+bindkey "^[f" focus
+bindkey "^[q" only
+
+# remove some stupid / dangerous key bindings
+bind s
+bind k
+bind W
+bind ^k
+bind .
+bind ^\
+bind \\
+bind ^h
+bind h
